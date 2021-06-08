@@ -20,6 +20,7 @@ function _Draw_Array(_Array) {
 
     var _Main_Div = document.createElement("div");
     _Main_Div.className = "columns";
+    _Main_Div.style.border = "1px black solid";
 
     for (i = 0; i < _Array.length; i++) {
 
@@ -29,7 +30,7 @@ function _Draw_Array(_Array) {
         _Div.style.width = "10px";
         _Div.style.backgroundColor = "red";
         _Div.style.border = "1px black solid";
-
+        
         _Main_Div.appendChild(_Div);
 
     }
@@ -39,7 +40,7 @@ function _Draw_Array(_Array) {
 }
 
 
-function _Bubble_Sort(_Array) {
+_Bubble_Sort = (_Array) => {
 
     let _Continue = true;
 
@@ -62,7 +63,7 @@ function _Bubble_Sort(_Array) {
 
         }
         _Draw_Array(_Array);
-        console.log(_Array);
+        console.log(_Array); 
 
     }
 }
